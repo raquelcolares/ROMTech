@@ -1,6 +1,15 @@
 # ROMTech
 ## Speech-to-Text Interface for Physiotherapists
 
+### Authors
+Manoj Sharma
+
+Omid Moridnejad
+
+Raquel Colares 
+
+Thuvaarakkesh Ramanathan
+
 ### Introduction
 Physiotherapists have the task not only to analyze and execute procedures to the patients, but also register detailed everything during the patient’s evaluation. Documenting all, not only takes time during the consultation, causing them work overload, but also they end up with less time to focus only on the patient. 
 Based on this healthcare need, the goal of this project is to create an interface where they can attach an audio that will provide the transcription for them, avoiding them to write or type during the patient’s appointment.  
@@ -25,5 +34,4 @@ The streamlit can be seen on the link above and also accessing by the following 
 
 ### References 
 
-"PriMock57: A Dataset Of Primary Care Mock Consultations" Accessed on February 2025
-https://arxiv.org/abs/2204.00333
+Korfiatis A.P, Sarac R., Moramarco F., Savkov A. (2022). *PriMock57: A Dataset Of Primary Care Mock Consultations.* Available at: https://arxiv.org/abs/2204.00333 (Accessed: February 2025)
