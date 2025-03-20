@@ -131,4 +131,4 @@ print(f"Transcription: {transcription}")
 # Step 10: Saving the model
 ####################################################
 model.save_pretrained("models/wav2vec2_model")
-processor.save_pretrained("models/wav2vec2_processor")
+processor.save_pretrained("models/wav2vec2_processor") 
