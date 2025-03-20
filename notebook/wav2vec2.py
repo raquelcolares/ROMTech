@@ -10,7 +10,7 @@ from transformers import Wav2Vec2ForCTC, Wav2Vec2Processor
 # Step 2: Loading the data
 ####################################################
 data_directory = "data"
-transcript_dir = "transcripts"
+transcript_dir = "transcripts" 
 audio_files = []
 
 for file in os.listdir(data_directory):
