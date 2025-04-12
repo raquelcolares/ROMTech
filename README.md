@@ -13,13 +13,24 @@ This project encompasses a speech-to-text transcription task, with deep unsuperv
 The documentation workload for physiotherapists takes away valuable time from patient care. Our goal is to develop a speech-to-text transcription system using deep unsupervised learning models to automate this process, improving efficiency and reducing administrative burden.
 
 ### Data
-The development of this project initially relied on doctor-patient conversation audios from the study "PriMock57: A Dataset Of Primary Care Mock Consultations". This dataset provided a foundational resource for training the speech-to-text model within a healthcare context. However, as it primarily focuses on general medical dialogues, an expansion with physiotherapy-specific data is proposed. This enhancement aims to improve the model’s accuracy and contextual relevance, ensuring more precise transcriptions adapted to the documentation needs of physiotherapists during clinical evaluations.
+The development of this project relied on doctor-patient conversation audios from the study "PriMock57: A Dataset Of Primary Care Mock Consultations".  This dataset served as the primary resource for training the speech-to-text model within a healthcare context. While it focuses on general medical dialogues rather than physiotherapy-specific interactions, it still provided a valuable foundation for building and testing the transcription pipeline. At the time of development, no publicly available datasets containing specically physiotherapy consultation audio were identified.
+
+However, for testing purposes, we recorded our own simulated physiotherapy consultations in five languages (English, French, Portuguese, Persian, and Hindi) to evaluate both the performance of the models and the functionality of the Streamlit interface.
 
 ### Transcription task
 
+* Whisper model
+
+For this project, we explored different transcription approaches, and OpenAI’s Whisper model stood out as the most effective. Widely adopted in healthcare applications, Whisper has proven capable of handling real-world, noisy audio while maintaining high transcription accuracy. It performed well on medical dialogues and provided robust multilingual support across 99 languages, making it interesting for our purpose and evaluation. Its strong performance, language coverage, and relevance to clinical contexts made Whisper the ideal choice for establishing a reliable transcription for our project.
 
 
 ### Summarization task
+
+* Autoencoder
+
+
+
+* BERT
 
 
 
@@ -39,12 +50,11 @@ The streamlit can be seen on the link above and also accessing by the following 
 
 Korfiatis A.P, Sarac R., Moramarco F., Savkov A. (2022). *PriMock57: A Dataset Of Primary Care Mock Consultations.* Available at: https://arxiv.org/abs/2204.00333 (Accessed: February 2025)
 
+*Sequence Modeling With CTC* Available at: https://distill.pub/2017/ctc/ (Accessed: February 2025)
 
-https://distill.pub/2017/ctc/ 
+Platen, P.V. *Fine-Tune Wav2Vec2 for English ASR with Transformers* Available at: https://huggingface.co/blog/fine-tune-wav2vec2-english (Accessed: February 2025)
 
-https://huggingface.co/blog/fine-tune-wav2vec2-english
+OpenAI Platform. *Speech to text.* Available at: https://platform.openai.com/docs/guides/speech-to-text (Accessed: February 2025)
 
-https://medium.com/@heyamit10/practical-guide-on-fine-tuning-wav2vec2-7c343d5d7f3b
-
-https://platform.openai.com/docs/guides/speech-to-text
+PyTorch. *Cosine Similarity.* Available at: https://pytorch.org/docs/stable/generated/torch.nn.CosineSimilarity.html (Accessed: April 2025)
 
