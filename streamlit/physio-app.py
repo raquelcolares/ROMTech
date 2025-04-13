@@ -39,7 +39,7 @@ autoencoder_model.eval()
 # Defining the language options
 language = st.selectbox(
     "Select language for transcription:",
-    ["en (English)", "fr (French)", "pt (Portuguese)", "fa (Persian)", "hi (Hindi)"]
+    ["en (English)", "fr (French)", "pt (Portuguese)", "fa (Farsi)", "hi (Hindi)"]
 )
 language_code = language.split(" ")[0]
 
