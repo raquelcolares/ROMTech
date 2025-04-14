@@ -98,7 +98,7 @@ def get_sentence_embedding(sentence):
 def summarize_with_bert(transcription, summary_length=5, plot=False):
     sentences = transcription.split(". ")
     if len(sentences) <= summary_length:
-        return transcription
+        return transcription, 1.0
 
     sentence_embeddings = [get_sentence_embedding(sent) for sent in sentences]
     sentence_embeddings = np.stack(sentence_embeddings)
