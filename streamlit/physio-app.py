@@ -11,6 +11,8 @@ from transformers import BertTokenizer, BertModel
 from sklearn.metrics.pairwise import cosine_similarity
 import warnings
 warnings.filterwarnings("ignore")
+from pydub import AudioSegment
+AudioSegment.converter = "/usr/bin/ffmpeg"
 
 # Setting the Autoencoder class
 class Autoencoder(nn.Module):
