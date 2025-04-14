@@ -1,0 +1,8 @@
+streamlit
+openai-whisper
+torch
+numpy
+pydub
+sentence-transformers
+transformers
+scikit-learn
