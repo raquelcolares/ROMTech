@@ -98,6 +98,7 @@ def get_sentence_embedding(sentence):
 def summarize_with_bert(transcription, summary_length=5, plot=False):
     sentences = transcription.split(". ")
     if len(sentences) <= summary_length:
+        # 1.0 to no matter the language, the function will return exactly two values, and the unpacking won’t crash (like for Farsi language)
         return transcription, 1.0
 
     sentence_embeddings = [get_sentence_embedding(sent) for sent in sentences]
