@@ -39,7 +39,7 @@ autoencoder_model.load_state_dict(torch.load("models/autoencoder.pt", map_locati
 autoencoder_model.eval()
 
 # Loading and defining the Bert model
-@st.cache
+@st.cache_resource
 def load_bert_model():
     tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
     model = BertModel.from_pretrained("bert-base-uncased")
