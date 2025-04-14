@@ -34,7 +34,7 @@ autoencoder_model = Autoencoder()
 sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # Loading the weights already trained of the Autoencoder
-autoencoder_model.load_state_dict(torch.load("autoencoder.pt", map_location=torch.device("cpu")))
+autoencoder_model.load_state_dict(torch.load("models/autoencoder.pt", map_location=torch.device("cpu")))
 # Setting to eval mode
 autoencoder_model.eval()
 
