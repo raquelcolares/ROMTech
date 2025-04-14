@@ -39,6 +39,7 @@ autoencoder_model.load_state_dict(torch.load("models/autoencoder.pt", map_locati
 autoencoder_model.eval()
 
 # Loading and defining the Bert model
+@st.cache
 def load_bert_model():
     tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
     model = BertModel.from_pretrained("bert-base-uncased")
@@ -154,7 +155,7 @@ def main():
         st.download_button("Download Summary", summary, file_name="summary.txt")
 
     with st.sidebar:
-        st.image("logo4.jpg")
+        st.image("https://raw.githubusercontent.com/raquelcolares/ROMTech/main/ROMTech%20logo.jpg")
         st.markdown("### Contacts:")
         st.markdown("[Manoj Sharma](https://www.linkedin.com/in/manoj-sharma-b46b81aa/)")
         st.markdown("[Omid Moridnejad](https://www.linkedin.com/in/omid-moridnejad-2855a5151/)")
