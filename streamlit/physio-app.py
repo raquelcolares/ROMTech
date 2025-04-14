@@ -9,6 +9,8 @@ from pydub import AudioSegment
 from sentence_transformers import SentenceTransformer
 from transformers import BertTokenizer, BertModel
 from sklearn.metrics.pairwise import cosine_similarity
+import warnings
+warnings.filterwarnings("ignore")
 
 # Setting the Autoencoder class
 class Autoencoder(nn.Module):
