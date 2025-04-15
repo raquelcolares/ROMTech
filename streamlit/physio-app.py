@@ -33,9 +33,17 @@ class Autoencoder(nn.Module):
         return decoded
         
 # Loading and defining the Whisper model, and a pre-trained sentence embedding 
-whisper_model = whisper.load_model("base")
+@st.cache_resource
+def load_whisper_model():
+    return whisper.load_model("base")
+
+@st.cache_resource
+def load_sentence_model():
+    return SentenceTransformer("all-MiniLM-L6-v2")
+
+whisper_model = load_whisper_model()
+sentence_model = load_sentence_model()
 autoencoder_model = Autoencoder()
-sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 # Loading the weights already trained of the Autoencoder
 autoencoder_model.load_state_dict(torch.load("models/autoencoder.pt", map_location=torch.device("cpu")))
