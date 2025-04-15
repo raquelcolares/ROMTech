@@ -40,7 +40,7 @@ To complement our summarization pipeline, we implemented an extractive summariza
 
 
 ### Visualization
-- **Project visualization:** [https://](https://physio-interface.streamlit.app/)
+- **Project visualization:** https://physio-interface.streamlit.app/
 
 The streamlit can be seen on the link above and also accessing by the following command line on the Anaconda prompt:
 
