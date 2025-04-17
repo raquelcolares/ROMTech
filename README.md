@@ -50,7 +50,10 @@ The streamlit can be seen on the link above and also accessing by the following 
 
 ### Demo
 
-https://github.com/raquelcolares/ROMTech/blob/main/demo/Physio-Interface-Demo%20-%20Made%20with%20Clipchamp.mp4 
+<video width="600" controls>
+  <source src="https://github.com/raquelcolares/ROMTech/releases/download/Demo-video/Physio-Interface-Demo.-.Made.with.Clipchamp.1.mp4" type="video/mp4">
+</video>
+
 
 ### References 
 
