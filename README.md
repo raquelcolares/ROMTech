@@ -1,9 +1,6 @@
 # ROMTech
 ## Speech-to-Text Interface for Physiotherapists
 
-### Authors
-Manoj Sharma, Omid Moridnejad, Raquel Colares, Thuvaarakkesh Ramanathan
-
 ### Introduction
 Physiotherapists have the task not only to analyze and execute procedures to the patients, but also register detailed everything during the patient’s evaluation. Documenting all, not only takes time during the consultation, causing them work overload, but also they end up with less time to focus only on the patient. 
 Based on this healthcare need, the goal of this project is to create an interface where they can attach an audio that will provide the transcription for them, avoiding them to write or type during the patient’s appointment.  
