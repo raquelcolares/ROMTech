@@ -1,1 +1,1 @@
-On this folder contains the audios to test the Streamlit interface in English, French, Portuguese, Farsi and Hindi.
+On this folder contains the audios for testing in the Streamlit interface.

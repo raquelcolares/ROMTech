@@ -64,7 +64,7 @@ tokenizer, bert_model = load_bert_model()
 # Defining the language options
 language = st.selectbox(
     "Select language for transcription:",
-    ["en (English)", "fr (French)", "pt (Portuguese)", "fa (Farsi)", "hi (Hindi)"]
+    ["en (English)", "fr (French)", "pt (Portuguese)"]
 )
 language_code = language.split(" ")[0]
 
@@ -168,11 +168,7 @@ def main():
 
     with st.sidebar:
         st.image("https://raw.githubusercontent.com/raquelcolares/ROMTech/main/ROMTech%20logo.jpg")
-        st.markdown("### Contacts:")
-        st.markdown("[Manoj Sharma](https://www.linkedin.com/in/manoj-sharma-b46b81aa/)")
-        st.markdown("[Omid Moridnejad](https://www.linkedin.com/in/omid-moridnejad-2855a5151/)")
-        st.markdown("[Raquel Colares](https://www.linkedin.com/in/raquel-colares-7b1327a0/)")
-        st.markdown("[Thuvaarakkesh Ramanathan](https://www.linkedin.com/in/rt-rakesh/)")
+
 
 if __name__ == "__main__":
     st.sidebar.markdown("""
