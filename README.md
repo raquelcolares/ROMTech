@@ -51,7 +51,7 @@ Or on VS Code:
 
 ### Demo
 
-https://github.com/user-attachments/assets/44738dba-53fe-4b4c-b5f6-0f3796aadd5d
+https://github.com/user-attachments/assets/ec6571de-8d46-4b1e-b73e-23b2689895d1
 
 
 
